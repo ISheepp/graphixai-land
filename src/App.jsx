@@ -1,7 +1,5 @@
 import './App.css';
 import './my.css';
-import Footer from "./view/Footer";
-import Header from "./view/Header";
 import Main from "./view/Main";
 import Container from "./view/Container";
 

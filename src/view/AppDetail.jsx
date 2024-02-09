@@ -1,16 +1,14 @@
 import React from 'react';
 import Markdown from "react-markdown";
 
-
 const AppDetail = () => {
 
   const markdown = `
-  # Hello
+  ## Hello graphIxAI
   
-  ## World
+  if you want to add more information, you can add it here.
   
-  1. 2333
-  2. hgi
+  
   
   
   `
@@ -44,18 +42,17 @@ const AppDetail = () => {
       </div>
 
       {/* App 截图 */}
-      <div className="grid grid-cols-1 gap-4 mb-4">
+      <div className="grid grid-cols-2 gap-4 mb-4">
         <img src="https://sindresorhus.com/_astro/screenshot1.1a1a5f39.jpg" alt="Screenshot 1" className="rounded-lg"/>
         <img src="https://sindresorhus.com/_astro/screenshot1.1a1a5f39.jpg" alt="Screenshot 2" className="rounded-lg"/>
         {/* Add more screenshots as needed */}
       </div>
 
       {/* Markdown 渲染 */}
-      <div className="mb-4">
-        <Markdown>
-          {markdown}
-        </Markdown>
+      <div className="flex justify-center mt-8">
+        <Markdown className="prose lg:prose-xl" children={markdown} />
       </div>
+
     </div>
   );
 };
