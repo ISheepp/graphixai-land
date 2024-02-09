@@ -1,11 +1,22 @@
-import { useState } from 'react';
 import './App.css';
+import './my.css';
+import Footer from "./view/Footer";
+import Header from "./view/Header";
+import Main from "./view/Main";
+import Container from "./view/Container";
 
 function App() {
+
+  const cards = [
+    {id: 1, title: "Card 1", content: "Content 1"},
+    {id: 2, title: "Card 2", content: "Content 2"},
+    {id: 3, title: "Card 3", content: "Content 3"},
+  ]
+
   return (
-    <div className="App">
-      <button className="btn">Hello daisyUI</button>
-    </div>
+    <Container>
+      <Main cards={cards}/>
+    </Container>
   );
 }
 
