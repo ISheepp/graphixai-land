@@ -5,6 +5,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.10",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18",

@@ -4,7 +4,9 @@ import {createRoot} from 'react-dom/client';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {StrictMode} from "react";
 import AppDemoOne from "./view/AppDemoOne";
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
+injectSpeedInsights();
 
 const container = document.getElementById('root');
 
