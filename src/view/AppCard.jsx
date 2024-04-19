@@ -11,9 +11,9 @@ const AppCard = ({card}) => {
         {/* <img src="/assets/Logo（ClearAI）.jpg" alt={card.name} className="rounded-lg"/> */}
       </div>
       {/* 描述 */}
-      <div className="w-2/3 pl-4">
-        <h2 className="text-lg font-bold mb-2">{card.name}</h2>
-        <p className="text-gray-700 mb-4">
+      <div className="w-2/3 pl-8">
+        <h2 className="text-4xl font-bold mb-2">{card.name}</h2>
+        <p className="text-xl font-mono text-gray-700 mb-4">
           {card.content}
         </p>
         <button className='btn btn-sm'><a href={card.router}>Details</a></button>

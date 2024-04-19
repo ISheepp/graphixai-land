@@ -6,6 +6,10 @@ import {StrictMode} from "react";
 import AppDemoOne from "./view/AppDemoOne";
 import { injectSpeedInsights } from '@vercel/speed-insights';
 
+import AppDemoTwo from './view/AppDemoTwo';
+import AppDemoThree from './view/AppDemoThree';
+import AppDemoFour from './view/AppDemoFour';
+
 injectSpeedInsights();
 
 const container = document.getElementById('root');
@@ -20,6 +24,18 @@ const router = createBrowserRouter([
   {
     path: "/detail-one",
     element: <AppDemoOne />,
+  },
+  {
+    path: "/detail-two",
+    element: <AppDemoTwo />,
+  },
+  {
+    path: "/detail-three",
+    element: <AppDemoThree />,
+  },
+  {
+    path: "/detail-four",
+    element: <AppDemoFour />,
   },
 ]);
 

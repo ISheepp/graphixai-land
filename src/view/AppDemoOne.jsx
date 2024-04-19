@@ -1,12 +1,12 @@
 import React from 'react';
 import Container from "./Container";
-import AppDetail from "./AppDetail";
+import AppDetailOne from "./AppDetailOne";
 
 const AppDemoOne = () => {
   return (
     <>
     <Container>
-      <AppDetail/>
+      <AppDetailOne/>
     </Container>
     </>
   );

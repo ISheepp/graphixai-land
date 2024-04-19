@@ -7,7 +7,7 @@ const Container = ({children}) => {
     <div className="min-h-screen flex flex-col">
       <Header/>
       {children}
-      <Footer val="Copyright © 2024 - All right reserved by ACME Industries Ltd"/>
+      <Footer val="Copyright © 2024 - All right reserved by ClearAI Industries Ltd"/>
     </div>
   );
 };
